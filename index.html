@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+$("#show_video").click(function(){
+$("#hello").css('visibility','visible'); 
+$('#show_video').hide();
+});
+});
+</script>
+</head>
+<body>
+<img src="yt_image.png" width="220" height="120" id="show_video" />
+<div id="hello" style="visibility:hidden;">
+<object width="220" height="120"><param value="http://www.youtube.com/watch?feature=player_embedded&v=DbwI7qSjZbY" name="movie"><param value="window" name="wmode"><param value="true" name="allowFullScreen"><embed width="220" height="120" wmode="window" allowfullscreen="true" type="application/x-shockwave-flash" src="http://www.youtube.com/watch?feature=player_embedded&v=DbwI7qSjZbY"></object>
+</div>
+</body>
+</html>
